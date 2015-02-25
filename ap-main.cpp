@@ -20,8 +20,8 @@
 #include <string.h>
 //#include <delays.h>
 
-#include <gtk/gtk.h>
-#include <gdk/gdkkeysyms.h>
+// #include <gtk/gtk.h>
+// #include <gdk/gdkkeysyms.h>
 
 #include "main.h"
 #define	MAIN_C

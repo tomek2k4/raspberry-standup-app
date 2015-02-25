@@ -9,10 +9,10 @@ OBJ = ap-main.o
 DEPS = main.h ap-main.h
 
 #Any special libraries you are using in your project (e.g. -lbcm2835 -lrt `pkg-config --libs gtk+-3.0` ), or leave blank
-LIBS = -lbcm2835 -lrt `pkg-config --libs gtk+-3.0`
+LIBS = 
 
 #Set any compiler flags you want to use (e.g. -I/usr/include/somefolder `pkg-config --cflags gtk+-3.0` ), or leave blank
-CFLAGS = `pkg-config --cflags gtk+-3.0`
+CFLAGS = 
 
 #Set the compiler you are using ( gcc for C or g++ for C++ )
 CC = g++
@@ -26,7 +26,7 @@ EXTENSION = .cpp
 
 #Combine them into the output file
 #Set your desired exe output file name here
-countdown.a: $(OBJ)
+main.a: $(OBJ)
 	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
 
 #Cleanup
